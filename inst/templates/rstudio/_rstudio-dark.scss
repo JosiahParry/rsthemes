@@ -92,7 +92,8 @@ $ui_rstudio_is_dark: true;
   font-style: normal;
   color: $code_reserved;
   &.ace_operator {
-    font-style: normal;
+    font-style: italic;
+    font-weight: bold;
     color: $code_operator;
   }
   &.ace_other.ace_unit {
@@ -151,6 +152,7 @@ $ui_rstudio_is_dark: true;
 }
 .ace_comment {
   color: $code_comment;
+  background-color: $code_comment_background;
 }
 .ace_invisible {
   color: $ui_invisible;
@@ -223,6 +225,17 @@ $ui_rstudio_is_dark: true;
 }
 #rstudio_console_input .ace_marker-layer .ace_selection {
   background: $ui_console_selection;
+}
+
+
+
+// Function styling $code_function
+.ace_keyword {
+  // to do allow italics, bolds, or underline
+  font-style: italic;
+  color: $code_function !important;
+  background-color: $code_function_background;
+
 }
 
 /* ---- RStudio Theme ---- */
